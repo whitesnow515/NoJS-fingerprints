@@ -1,0 +1,21 @@
+As you know, No-JS fingerprint generator is developed without JS.
+So it is using CSS.
+
+@media (min-width: 2340px) and (max-width: 2341px) {
+#width::after {
+ background-image: url("server.php/?data=value")
+}
+}
+
+As show above, if screen resolution value is between min-width and max-width,   'background-image: url("server.php/?data=value") }' of CSS attribute is runed.
+So url value is sent to server.
+As likewise, other CSS attribute is runed. 
+Then  server side is recived data value.
+Also request is included header value.
+Therefore server side is recived header value.
+
+Sum value = CSS + Header.
+
+As last, this value is crypted with sha256.
+And this result is sent to client and saved database.
+
